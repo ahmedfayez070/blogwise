@@ -1,4 +1,5 @@
 ## Getting Started
+## blog app made by Nextjs 14
 
 First, install the dependencies:
 
