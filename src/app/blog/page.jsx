@@ -1,17 +1,6 @@
 import PostCard from "@/components/postCard/postCard";
 import styles from "./blog.module.css";
-
-const getData = async () => {
-  const res = await fetch(process.env.API_URL + "/blog", {
-    next: { revalidate: 600 },
-  });
-
-  if (!res.ok) {
-    throw new Error("Something went wrong");
-  }
-
-  return res.json();
-};
+import { getPosts } from "@/lib/data";
 
 export const metadata = {
   title: "Blog Page",
@@ -19,7 +8,7 @@ export const metadata = {
 };
 
 const BlogPage = async () => {
-  const posts = await getData();
+  const posts = await getPosts();
 
   return (
     <div className={styles.container}>
