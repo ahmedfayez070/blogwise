@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "BlogWise Homepage",
+    default: "BlogWise Home Page",
     template: "%s | BlogWise",
   },
   description: "Blog App",

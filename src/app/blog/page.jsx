@@ -2,7 +2,7 @@ import PostCard from "@/components/postCard/postCard";
 import styles from "./blog.module.css";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/blog", {
+  const res = await fetch(process.env.API_URL + "/blog", {
     next: { revalidate: 600 },
   });
 
@@ -11,6 +11,11 @@ const getData = async () => {
   }
 
   return res.json();
+};
+
+export const metadata = {
+  title: "Blog Page",
+  description: "Blog description",
 };
 
 const BlogPage = async () => {
