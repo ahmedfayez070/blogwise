@@ -54,4 +54,8 @@
   .container {
     flex-direction: column;
   }
+
+  .form {
+    gap: 15px;
+  }
 }

@@ -9,7 +9,6 @@ export const GET = async (request) => {
     const posts = await Post.find();
     return NextResponse.json(posts);
   } catch (err) {
-    console.log(err);
     throw new Error("Failed to fetch posts!");
   }
 };

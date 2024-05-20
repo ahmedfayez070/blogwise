@@ -22,7 +22,6 @@ const login = async (credentials) => {
 
     return user;
   } catch (err) {
-    console.log(err);
     throw new Error("Failed to login!");
   }
 };
@@ -67,7 +66,6 @@ export const {
             await newUser.save();
           }
         } catch (err) {
-          console.log(err);
           return false;
         }
       }

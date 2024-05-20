@@ -1,11 +1,11 @@
-.form{
+.form {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 30px;
 }
 
-.form input{
+.form input {
   padding: 20px;
   background-color: var(--bg);
   color: var(--textColor);
@@ -13,7 +13,7 @@
   border-radius: 5px;
 }
 
-.form button{
+.form button {
   padding: 20px;
   cursor: pointer;
   background-color: var(--btn);
@@ -21,4 +21,14 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    gap: 20px;
+  }
+
+  .register {
+    font-size: 14px;
+  }
 }
