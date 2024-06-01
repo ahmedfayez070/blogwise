@@ -37,5 +37,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 999;
+    background-color: var(--bg);
   }
 }
